@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-container">
+
+    <div class="side-panel">
+    <h3>Controls</h3>
+
+    <label for="sizeSlider">
+        Number of bars
+        <span id="sizeValue">25</span>
+    </label>
+
+    <input 
+        type="range" 
+        id="sizeSlider" 
+        min="10" 
+        max="100" 
+        value="25"
+    />
+</div>
+
+
+    <h1>Sorting Visualizer</h1>
+
+    <div class="controls">
+        <button id="generate">Generate New Array</button>
+
+        <button id="bubbleSort">Bubble Sort</button>
+        <button id="selectionSort">Selection Sort</button>
+        <button id="insertionSort">Insertion Sort</button>
+
+        <button id="codeToggle">View Algorithm</button>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="icon-btn">
+            <span class="moon"></span>
+        </button>
+
+        <!-- Info Button -->
+        <button id="infoBtn" class="icon-btn">
+            <span class="info-icon">i</span>
+        </button>
+    </div>
+
+    <p id="status-text">Click "Generate New Array" to begin</p>
+
+    <div id="array-container"></div>
+
+    <!-- Algorithm Code Panel -->
+    <div id="codePanel" class="hidden">
+        <pre id="algorithmCode"></pre>
+    </div>
+
+</div>
+
+<!-- Info Modal -->
+<div id="infoModal" class="modal hidden">
+    <div class="modal-content">
+        <h2>How to Use</h2>
+        <p>1. Click “Generate New Array”.</p>
+        <p>2. Select a sorting algorithm.</p>
+        <p>3. Observe comparisons and swaps.</p>
+        <p>4. View pseudocode if needed.</p>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
